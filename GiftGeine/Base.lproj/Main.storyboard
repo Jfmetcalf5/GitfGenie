@@ -9,6 +9,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Bodoni72-Book-SmallCaps.ttf">
+            <string>BodoniSvtyTwoSCITCTT-Book</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Lamp View Controller-->
         <scene sceneID="Zg7-VR-dby">
@@ -113,19 +118,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ugy-3p-74v">
-                                <rect key="frame" x="86" y="138" width="204" height="160"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ugy-3p-74v">
+                                <rect key="frame" x="27" y="185" width="320" height="343"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Congratulations!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TIH-kS-E3f">
-                                <rect key="frame" x="17" y="64" width="343" height="54"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Congradulations!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TIH-kS-E3f">
+                                <rect key="frame" x="46" y="95" width="283" height="48"/>
+                                <color key="tintColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="40"/>
+                                <color key="textColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="TIH-kS-E3f" firstAttribute="centerX" secondItem="VcM-1W-Rh2" secondAttribute="centerX" id="48a-5V-bxH"/>
+                            <constraint firstItem="TIH-kS-E3f" firstAttribute="leading" secondItem="AHP-gs-0JG" secondAttribute="leading" constant="46" id="Bi4-2A-GFS"/>
+                            <constraint firstItem="AHP-gs-0JG" firstAttribute="trailing" secondItem="TIH-kS-E3f" secondAttribute="trailing" constant="46" id="Cog-t0-B1R"/>
+                            <constraint firstItem="ugy-3p-74v" firstAttribute="top" secondItem="TIH-kS-E3f" secondAttribute="bottom" constant="42" id="Ue6-Gw-HD1"/>
+                            <constraint firstItem="ugy-3p-74v" firstAttribute="centerX" secondItem="VcM-1W-Rh2" secondAttribute="centerX" id="Wmk-eU-Yse"/>
+                            <constraint firstItem="TIH-kS-E3f" firstAttribute="top" secondItem="AHP-gs-0JG" secondAttribute="top" constant="31" id="Zqm-2b-8jO"/>
+                            <constraint firstItem="ugy-3p-74v" firstAttribute="leading" secondItem="AHP-gs-0JG" secondAttribute="leading" constant="27" id="eGo-Sb-Gzh"/>
+                            <constraint firstItem="ugy-3p-74v" firstAttribute="centerY" secondItem="VcM-1W-Rh2" secondAttribute="centerY" constant="23" id="faS-l0-Td2"/>
+                            <constraint firstItem="AHP-gs-0JG" firstAttribute="bottom" secondItem="ugy-3p-74v" secondAttribute="bottom" constant="139" id="lsb-Ig-wiR"/>
+                            <constraint firstItem="AHP-gs-0JG" firstAttribute="trailing" secondItem="ugy-3p-74v" secondAttribute="trailing" constant="28" id="tMH-24-0HF"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="AHP-gs-0JG"/>
                     </view>
                     <connections>
@@ -157,6 +173,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="XqG-3R-Lwt"/>
+        <segue reference="vG5-DJ-zuw"/>
     </inferredMetricsTieBreakers>
 </document>
