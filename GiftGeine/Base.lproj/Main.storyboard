@@ -9,6 +9,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Bodoni72-Book-SmallCaps.ttf">
+            <string>BodoniSvtyTwoSCITCTT-Book</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Lamp View Controller-->
         <scene sceneID="Zg7-VR-dby">
@@ -18,32 +23,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="htX-8E-c29">
-                                <rect key="frame" x="16" y="511" width="126" height="95"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.96705620881224308" green="1" blue="0.17085748610721507" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="lampGenieAppearButtonTapped:" destination="3Xc-Lw-AxX" eventType="touchUpInside" id="A0h-eQ-Qcg"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qwP-Us-Wch">
-                                <rect key="frame" x="16" y="118" width="343" height="392"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Genie" translatesAutoresizingMaskIntoConstraints="NO" id="qwP-Us-Wch">
+                                <rect key="frame" x="29" y="138" width="332" height="457"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7S6-dX-xQP">
-                                <rect key="frame" x="143" y="80" width="89" height="30"/>
+                                <rect key="frame" x="242" y="509" width="89" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.077069251332482658" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Make A Wish"/>
                                 <connections>
                                     <segue destination="Sak-Nq-mbO" kind="show" id="IJn-lL-L1B"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hi!  my name is Ezoz, and I have a gift for you!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rzQ-Fm-rbb">
-                                <rect key="frame" x="16" y="20" width="350" height="27"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="htX-8E-c29">
+                                <rect key="frame" x="16" y="561" width="157" height="86"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <state key="normal" title="Button" image="GenieLamp"/>
+                                <connections>
+                                    <action selector="lampGenieAppearButtonTapped:" destination="3Xc-Lw-AxX" eventType="touchUpInside" id="A0h-eQ-Qcg"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rzQ-Fm-rbb">
+                                <rect key="frame" x="16" y="64" width="343" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <string key="text">Hi!  my name is Ezoz, 
+and I have a gift for you!</string>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="23"/>
+                                <color key="textColor" red="0.0048598507420000003" green="0.096086271109999996" blue="0.57499289509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -54,6 +63,7 @@
                     <connections>
                         <outlet property="genieImageView" destination="qwP-Us-Wch" id="ddW-Ii-d8I"/>
                         <outlet property="introTextLabel" destination="rzQ-Fm-rbb" id="9rg-8M-z9C"/>
+                        <outlet property="lampButton" destination="htX-8E-c29" id="dye-R4-gZO"/>
                         <outlet property="makeAWishButton" destination="7S6-dX-xQP" id="emX-yd-Af6"/>
                     </connections>
                 </viewController>
@@ -156,6 +166,10 @@
             <point key="canvasLocation" x="-266" y="158"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Genie" width="1494" height="1680"/>
+        <image name="GenieLamp" width="363" height="229"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="XqG-3R-Lwt"/>
     </inferredMetricsTieBreakers>
