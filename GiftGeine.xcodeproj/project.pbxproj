@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		3B08F22F205ADFB500028DFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B08F22E205ADFB500028DFF /* AppDelegate.swift */; };
-		3B08F231205ADFB500028DFF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B08F230205ADFB500028DFF /* ViewController.swift */; };
 		3B08F234205ADFB500028DFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B08F232205ADFB500028DFF /* Main.storyboard */; };
 		3B08F236205ADFB500028DFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B08F235205ADFB500028DFF /* Assets.xcassets */; };
 		3B08F239205ADFB500028DFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B08F237205ADFB500028DFF /* LaunchScreen.storyboard */; };
+		3B08F242205AE84C00028DFF /* LampViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B08F241205AE84C00028DFF /* LampViewController.swift */; };
+		3B08F244205AE85800028DFF /* WishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B08F243205AE85800028DFF /* WishViewController.swift */; };
+		3B08F246205AE86000028DFF /* GiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B08F245205AE86000028DFF /* GiftViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3B08F22B205ADFB500028DFF /* GiftGeine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GiftGeine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B08F22E205ADFB500028DFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3B08F230205ADFB500028DFF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3B08F233205ADFB500028DFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3B08F235205ADFB500028DFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B08F238205ADFB500028DFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B08F23A205ADFB500028DFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B08F241205AE84C00028DFF /* LampViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LampViewController.swift; sourceTree = "<group>"; };
+		3B08F243205AE85800028DFF /* WishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishViewController.swift; sourceTree = "<group>"; };
+		3B08F245205AE86000028DFF /* GiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,24 @@
 		3B08F22D205ADFB500028DFF /* GiftGeine */ = {
 			isa = PBXGroup;
 			children = (
-				3B08F22E205ADFB500028DFF /* AppDelegate.swift */,
-				3B08F230205ADFB500028DFF /* ViewController.swift */,
 				3B08F232205ADFB500028DFF /* Main.storyboard */,
+				3B08F241205AE84C00028DFF /* LampViewController.swift */,
+				3B08F243205AE85800028DFF /* WishViewController.swift */,
+				3B08F245205AE86000028DFF /* GiftViewController.swift */,
+				3B08F240205AE80000028DFF /* Resources */,
+			);
+			path = GiftGeine;
+			sourceTree = "<group>";
+		};
+		3B08F240205AE80000028DFF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3B08F22E205ADFB500028DFF /* AppDelegate.swift */,
 				3B08F235205ADFB500028DFF /* Assets.xcassets */,
 				3B08F237205ADFB500028DFF /* LaunchScreen.storyboard */,
 				3B08F23A205ADFB500028DFF /* Info.plist */,
 			);
-			path = GiftGeine;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +150,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B08F231205ADFB500028DFF /* ViewController.swift in Sources */,
+				3B08F246205AE86000028DFF /* GiftViewController.swift in Sources */,
+				3B08F242205AE84C00028DFF /* LampViewController.swift in Sources */,
 				3B08F22F205ADFB500028DFF /* AppDelegate.swift in Sources */,
+				3B08F244205AE85800028DFF /* WishViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +292,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MC2BEA2U5Y;
-				INFOPLIST_FILE = GiftGeine/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/GiftGeine/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.JfMetcalf.GiftGeine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -291,7 +307,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MC2BEA2U5Y;
-				INFOPLIST_FILE = GiftGeine/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/GiftGeine/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.JfMetcalf.GiftGeine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
